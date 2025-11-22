@@ -1,0 +1,52 @@
+/* Main Layout */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.main-layout {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    gap: 10px;
+    padding: 5px;
+    padding-bottom: 0;
+}
+
+/* Main Content Styles */
+.main-content {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    flex: 1;
+    background: linear-gradient(to top, black, rgb(39, 39, 39));
+    padding: 1.5rem;
+    border-radius: 0.7rem;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: thin;
+    scrollbar-color: #666 #333;
+}
+
+/* Custom scrollbar untuk webkit browsers */
+.main-content::-webkit-scrollbar {
+    width: 8px;
+}
+
+.main-content::-webkit-scrollbar-track {
+    background: #333;
+    border-radius: 4px;
+}
+
+.main-content::-webkit-scrollbar-thumb {
+    background: #666;
+    border-radius: 4px;
+}
+
+.main-content::-webkit-scrollbar-thumb:hover {
+    background: #888;
+}
+
+/* Responsive: pengaturan layout kolom ke baris */
+@media (max-width: 1024px) {
+    .main-layout {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
