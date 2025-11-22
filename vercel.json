@@ -34,10 +34,5 @@
     "SESSION_DRIVER": "cookie",
 
     "PHP_VERSION": "8.3"
-  },
-  "excludeFiles": [
-    ".git/**",
-    "tests/**",
-    "storage/**"
-  ]
+  }
 }

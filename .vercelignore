@@ -1,0 +1,5 @@
+.git
+tests
+storage/*.key
+/vendor
+/node_modules
